@@ -1,0 +1,311 @@
+/* ============================================
+   THƯ VIỆN TIẾNG MÔNG - Custom Styles
+   ============================================ */
+
+:root {
+  --primary: #1a237e;
+  --primary-light: #3949ab;
+  --accent: #c62828;
+  --accent-light: #ef5350;
+  --bg-cream: #fdf6e3;
+  --bg-light: #fef9ef;
+  --text-dark: #212121;
+  --text-muted: #616161;
+  --border-light: #e0d8c8;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+}
+
+/* --- Navbar --- */
+.navbar-hmong {
+  background-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-hmong .navbar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar-hmong .nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: opacity 0.2s;
+}
+
+.navbar-hmong .nav-link:hover {
+  opacity: 0.85;
+}
+
+.navbar-hmong .nav-link.active {
+  border-bottom: 2px solid #fff;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* --- Section Titles --- */
+.section-title {
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+}
+
+/* --- Overview Cards (Homepage) --- */
+.overview-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: #fff;
+}
+
+.overview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.overview-card .card-body {
+  padding: 2rem;
+  text-align: center;
+}
+
+.overview-card .card-icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.overview-card .card-title {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.overview-card .card-count {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+/* --- Gallery Grid --- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  aspect-ratio: 4/3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gallery Modal */
+#galleryModal .modal-body {
+  padding: 0;
+  text-align: center;
+  background: #000;
+}
+
+#galleryModal .modal-img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+#galleryModal .modal-caption {
+  padding: 0.75rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* --- Document Cards --- */
+.doc-card {
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  background: #fff;
+  transition: box-shadow 0.2s;
+}
+
+.doc-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.doc-card .card-body {
+  padding: 1.5rem;
+}
+
+.doc-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.doc-icon.word { color: #2b579a; }
+.doc-icon.excel { color: #217346; }
+.doc-icon.ppt { color: #d24726; }
+
+.doc-size {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* --- Video Cards --- */
+.video-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.video-card .card-body {
+  padding: 1.25rem;
+}
+
+.video-category-title {
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding-left: 0.75rem;
+  border-left: 4px solid var(--accent);
+}
+
+/* --- Footer --- */
+.footer-hmong {
+  background-color: var(--primary);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.footer-hmong a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.footer-hmong a:hover {
+  color: #fff;
+}
+
+.qr-code-img {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #fff;
+  border-radius: 8px;
+}
+
+/* --- About Section --- */
+.about-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* --- Buttons --- */
+.btn-accent {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-light);
+  color: #fff;
+}
+
+.btn-primary-hmong {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-primary-hmong:hover {
+  background-color: var(--primary-light);
+  color: #fff;
+}
+
+/* --- Page Header --- */
+.page-header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: #fff;
+  padding: 2.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  opacity: 0.85;
+  margin-bottom: 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 991.98px) {
+  .hero-section h1 { font-size: 2rem; }
+  .hero-section { padding: 3rem 0; }
+}
+
+@media (max-width: 767.98px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .hero-section h1 { font-size: 1.6rem; }
+  .hero-section { padding: 2rem 0; }
+  .page-header { padding: 1.5rem 0; }
+}
+
+@media (max-width: 575.98px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}

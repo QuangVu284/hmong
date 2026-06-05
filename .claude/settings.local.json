@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find . -type f -exec file {} \\\\;)",
+      "Bash(awk '{print $5, $9}')",
+      "Bash(git -C \"d:/h-mong\" status)",
+      "Bash(npx netlify:*)",
+      "Bash(npm --version)",
+      "Bash(gh auth:*)",
+      "Bash(git --version)"
+    ]
+  }
+}
